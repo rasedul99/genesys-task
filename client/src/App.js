@@ -3,7 +3,7 @@ import Layout from "./components/Layout/Layout";
 // import "./App.css";
 function App() {
   return (
-    <div>
+    <div className="max-w-7xl  mx-auto">
       <Layout />
     </div>
   );

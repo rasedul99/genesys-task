@@ -5,25 +5,25 @@ const UserList = () => {
     {
       firstName: "rasedul",
       LastName: "Islam",
-      Email: "rasedul@gmail.com",
+      Email: "x@gmail.com",
       password: 12345,
     },
     {
-      firstName: "Noam",
+      firstName: "rasedul",
       LastName: "Islam",
-      Email: "noman@gmail.com",
+      Email: "x@gmail.com",
       password: 12345,
     },
     {
-      firstName: "Sharnali",
+      firstName: "rasedul",
       LastName: "Islam",
-      Email: "sharnali@gmail.com",
+      Email: "x@gmail.com",
       password: 12345,
     },
     {
-      firstName: "kamrul",
+      firstName: "rasedul",
       LastName: "Islam",
-      Email: "kamrul@gmail.com",
+      Email: "x@gmail.com",
       password: 12345,
     },
   ];

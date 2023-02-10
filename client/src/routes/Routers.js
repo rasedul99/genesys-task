@@ -7,6 +7,7 @@ import Login from "../pages/Login/Login";
 import Recover from "../pages/Recover/Recover";
 import Register from "../pages/Register/Register";
 import Shop from "../pages/Shop/Shop";
+import UserList from "../pages/User/UserList";
 
 const Routers = () => {
   return (
@@ -19,6 +20,7 @@ const Routers = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={<Register />} />
         <Route path="/recover" element={<Recover />} />
+        <Route path="/userlist" element={<UserList />} />
         <Route path="/login" element={<Login />} />
       </Routes>
     </div>

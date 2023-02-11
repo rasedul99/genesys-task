@@ -51,6 +51,11 @@ const Blog = () => {
           </div>
         </div>
       </div>
+      <div className="text-center mt-16">
+        <button className="border border-solid border-[#2D2929] py-3 px-[56px] w-[241px] mx-auto  text-[#2D2929]">
+          VIEW ALL BLOG
+        </button>
+      </div>
     </div>
   );
 };

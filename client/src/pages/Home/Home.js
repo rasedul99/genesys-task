@@ -1,5 +1,7 @@
 import React from "react";
 import banner from "../../assets/banner/banner.png";
+import Blog from "../../components/Blog/Blog";
+
 import Collection from "../../components/Collection/Collection";
 import Slider from "../../components/Slider/Slider";
 
@@ -21,6 +23,9 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+      {/* Blog area */}
+      <Blog />
     </div>
   );
 };

@@ -6,7 +6,7 @@ import slider1 from "../../assets/slider/slider1.png";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "./Styles.css";
+import "./Slider.css";
 
 // import required modules
 import { Pagination } from "swiper";
@@ -17,12 +17,27 @@ const Slider = () => {
       <Swiper pagination={true} modules={[Pagination]} className="mySwiper">
         <SwiperSlide>
           <img src={slider1} />
+          <div className="description">
+            <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+            <p>Lorem Ipsum is simply dummy text of the</p>
+            <button className="slider_btn">SHOP NOW</button>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slider1} />
+          <div className="description">
+            <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+            <p>Lorem Ipsum is simply dummy text of the</p>
+            <button className="slider_btn">SHOP NOW</button>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slider1} />
+          <div className="description">
+            <h3>Lorem Ipsum is simply dummy text of the printing</h3>
+            <p>Lorem Ipsum is simply dummy text of the</p>
+            <button className="slider_btn">SHOP NOW</button>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
           <img src={slider1} />

@@ -2,6 +2,7 @@ import React from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
+import Loading from "../../components/Loading";
 import auth from "../../firebase.init";
 
 const Register = () => {
@@ -18,6 +19,18 @@ const Register = () => {
     await createUserWithEmailAndPassword(data.email, data.password);
   };
   const navigate = useNavigate();
+  let signInError;
+  if (loading) {
+    return <Loading></Loading>;
+  }
+  if (error) {
+    signInError = (
+      <p className="text-red-500">
+        <small>{error?.message}</small>
+      </p>
+    );
+  }
+
   if (user) {
     console.log(user);
     navigate("/");
@@ -89,6 +102,7 @@ const Register = () => {
                 })}
               />
             </div>
+            {signInError}
             <div className="flex flex-col gap-4">
               <input
                 type="submit"

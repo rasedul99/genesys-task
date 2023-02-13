@@ -14,11 +14,11 @@ const Home = () => {
         <Collection />
       </div>
       <div className="relative">
-        <img src={banner} className="w-full h-full object-contain" />
-        <div className="flex flex-col gap-12 w-[378px] text-center text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
-          <h3 className="font-semibold text-[44px]">20% OFF</h3>
+        <img src={banner} className="w-full h-full object-contain " />
+        <div className="flex flex-col gap-2 md:gap-12 w-[378px] text-center text-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ">
+          <h3 className="font-semibold md:text-[44px]">20% OFF</h3>
           <p>And extra 50% off sale styles code FORCE20</p>
-          <button className="border border-solid border-white py-3 px-[56px] w-[189px] mx-auto">
+          <button className="border border-solid border-white py-2 md:py-3 px-[56px] w-[189px] mx-auto">
             VIEW ALL
           </button>
         </div>

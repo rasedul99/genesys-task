@@ -10,7 +10,7 @@ import auth from "../../firebase.init";
 
 const Navbar = () => {
   const menuItems = ["HOME", "SHOP", "ABOUT US", "CONTACT US"];
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [user] = useAuthState(auth);
   const handleHambarger = () => {
     setShow(!show);
@@ -18,33 +18,31 @@ const Navbar = () => {
   console.log(user);
   return (
     <div className="bg-[#F0F0F0]">
-      <div className="flex justify-between items-center py-5  px-24">
+      <div className="flex justify-between items-center py-5  px-24 ">
         {/* Menu Items  */}
-        <ul className="hidden  md:flex gap-6 md:w-2/6">
+        <ul className="hidden  md:flex gap-6 ">
           {menuItems.map((item) => (
-            <li className="cursor-pointer ">
+            <li className="cursor-pointer">
               <Link to={item}>{item}</Link>{" "}
             </li>
           ))}
         </ul>
         {/* Logo */}
-        <div className="md:w-2/6">
-          <Link to="home" className="">
+        <div className="md:w-1/3">
+          <Link to="home">
             <img src={logo} alt="logo" className="w-13 h-[59px]" />
           </Link>
         </div>
         {/* icons */}
-        <div>
-          <div className="hidden  md:flex gap-4 md:w-2/6">
-            <img src={search} className="w-5 h-5" />
-            <Link to="/login">
-              <img src={userIcon} className="w-5 h-5" />
-            </Link>
-            <img src={basket} className="w-5 h-5" />
-          </div>
-          <div onClick={handleHambarger} className="md:hidden">
-            {show ? <div className="">X</div> : <GiHamburgerMenu />}
-          </div>
+        <div className="flex gap-4">
+          <img src={search} className="w-5 h-5" />
+          <Link to="/login">
+            <img src={userIcon} className="w-5 h-5" />
+          </Link>
+          <img src={basket} className="w-5 h-5" />
+        </div>
+        <div onClick={handleHambarger} className="md:hidden">
+          {show ? <div className="">X</div> : <GiHamburgerMenu />}
         </div>
       </div>
 

@@ -7,7 +7,7 @@ const Blog = () => {
   return (
     <div className="mx-[177px] my-[100px]">
       <h3 className="text-center mb-12 text-[28px]">OUR BLOG</h3>
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2  gap-6">
         <div className="flex flex-col gap-6">
           <img src={blog1} className="w-full h-full" />
           <div className="flex flex-col gap-3">
@@ -51,7 +51,7 @@ const Blog = () => {
           </div>
         </div>
       </div>
-      <div className="text-center mt-16">
+      <div className="text-center flex justify-center mt-16">
         <button className="border border-solid border-[#2D2929] py-3 px-[56px] w-[241px] mx-auto  text-[#2D2929]">
           VIEW ALL BLOG
         </button>
